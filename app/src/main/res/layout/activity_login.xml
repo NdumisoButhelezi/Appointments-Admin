@@ -14,10 +14,10 @@
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:gravity ="center"
         android:layout_marginBottom="20dp"
-        android:text="@string/login" />
+        android:gravity="center"
+        android:text="Patient login"
+        android:textSize="25sp" />
 
     <com.google.android.material.textfield.TextInputLayout
     android:layout_width="match_parent"

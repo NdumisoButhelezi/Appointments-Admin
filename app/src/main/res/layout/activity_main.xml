@@ -21,4 +21,15 @@
         android:layout_height="87dp"
         android:text="@string/logout" />
 
+    <!-- New Button for Admin Login
+    (To be deleted
+    on main project
+    along with it's counter part) -->
+    <Button
+        android:id="@+id/btn_admin_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Login"
+        android:layout_marginTop="20dp" />
+
 </LinearLayout>

@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     FirebaseAuth auth;
     Button button;
     TextView textView;
-
+    private Button btnAdminLogin;
     FirebaseUser user;
 
     @Override
@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
         auth = FirebaseAuth.getInstance();
         button = findViewById(logout);
+        btnAdminLogin = findViewById(R.id.btn_admin_login); // Link to the new button in XML
         textView = findViewById(R.id.user_details);
         user = auth.getCurrentUser();
 
@@ -58,6 +59,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
+        });
+
+        btnAdminLogin.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), AdminLoginActivity.class);
+            startActivity(intent);
         });
     }
 }
